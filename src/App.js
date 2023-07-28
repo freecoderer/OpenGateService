@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {!showContent ? (
+        <div className="black-screen"></div>
+      ) : (
+        <div className="split-screen">
+          <div className="left-screen"></div>
+          <div className="right-screen">
+            <pre>
+              <code className="source-code">
+                {`// Your source code goes here`}
+              </code>
+            </pre>
+          </div>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default App;
