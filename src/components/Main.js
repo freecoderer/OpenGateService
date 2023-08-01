@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Main.css';
+import "../fonts/pretendardvariable.css";
 
 
 export default function Main() {

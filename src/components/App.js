@@ -1,34 +1,34 @@
 import '../styles/App.css';
-
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-
-
-/**improt components */
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Main';
 import Quiz from './Quiz';
 import Result from './Result';
+import Answer1 from './Answer1'; // Import the Answer1 component
 
-/**react routes */
 const router = createBrowserRouter([
   {
-    path : '/', //루트 페이지
-    element : <Main></Main>
+    path: '/',
+    element: <Main />,
   },
   {
-    path : '/quiz', //퀴즈 페이지
-    element : <Quiz></Quiz>
+    path: '/quiz',
+    element: <Quiz />,
   },
   {
-    path : '/result', //결과 페이지
-    element : <Result></Result>
-  }
-])
+    path: '/result',
+    element: <Result />,
+  },
+  // Add a new route for Answer1, with the parameter :questionIndex
+  {
+    path: '/answer1/:questionIndex',
+    element: <Answer1 />,
+  },
+]);
 
 function App() {
   return (
     <>
-     <RouterProvider  router={router}></RouterProvider>
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }
