@@ -1,30 +1,34 @@
 .main{
+    padding: 15vh;
     background-color: #1C1B1A;
 }
 
 .container{
     display : flex;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 2vh;
     flex-direction: column;
 }
 
-h1{
+h2{
     color: #FF7710;
-    font-family: 'Pretendard Variable';
-    font-size: 3em;
+    font-family: 'Pretendard Bold';
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0.25em;
 }
 
 h3{
     color: #FF7710;   
     font-family: 'Pretendard Variable';
     font-size: 1.5em;
+    font-weight: 200;
+    margin-top: 0;
 }
 
 .logo {
     width: 300px;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
+    padding: 3vh;
 }
 
 a.button {
@@ -34,18 +38,20 @@ a.button {
     width: 120px;
     padding: 0;
     margin: 10px 20px 10px 0;
-    font-weight: 600;
+    font-weight: 800;
     text-align: center;
     line-height: 50px;
-    color: black;
+    color: #1C1B1A;
     border-radius: 5px;
     transition: all 0.2s;
+    font-family: 'Pretendard Variable';
+    font-size: 1em;
 }
 
 a,
 a:visited {
     text-decoration: none;
-    color: black;
+    color: #1C1B1A;
 }
 
 .btnPush:hover {
@@ -54,17 +60,17 @@ a:visited {
 }
 
 .btnbtn {
-    background: blanchedalmond;
+    background: #FF7710;
 }
 
 .btnbtn.btnBorder {
-    box-shadow: 0px 0px 0px 0px blanchedalmond;
+    box-shadow: 0px 0px 0px 0px #FF7710;
 }
 
 .btnbtn.btnBorder:hover {
-    box-shadow: 0px 0px 0px 5px blanchedalmond;
+    box-shadow: 0px 0px 0px 5px #FF7710;
 }
 
 .btnbtn.btnPush {
-    box-shadow: 0px 5px 0px 0px #D2B48C;
+    box-shadow: 0px 5px 0px 0px orangered;
 }
