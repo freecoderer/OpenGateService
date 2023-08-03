@@ -1,7 +1,7 @@
 import '../styles/App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Main';
-import Quiz from './Quiz';
+import Quiz1 from './Quiz1';
 import Result from './Result';
 import Answer1 from './Answer1'; // Import the Answer1 component
 
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <Main />,
   },
   {
-    path: '/quiz',
-    element: <Quiz />,
+    path: '/quiz1',
+    element: <Quiz1 />,
   },
   {
     path: '/result',
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   },
   // Add a new route for Answer1, with the parameter :questionIndex
   {
-    path: '/answer1/:questionIndex',
+    path: '/answer1',
     element: <Answer1 />,
   },
 ]);

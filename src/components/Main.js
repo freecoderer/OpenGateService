@@ -13,7 +13,7 @@ export default function Main() {
                     <img src="img/cutelion2.png" alt="" className='logo'></img>
                 </div>
                 <div>
-                    <a href="/quiz" class="button btnPush btnbtn">시작하기</a>
+                    <a href="/quiz1" class="button btnPush btnbtn">시작하기</a>
                 </div>    
             </div>
         </div>

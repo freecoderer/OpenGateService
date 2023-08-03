@@ -1,0 +1,48 @@
+.answer-container {
+    padding: 15vh;
+    background-color: #1c1b1a;
+    color: #ff7710;
+    font-family: 'Pretendard Variable';
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-family: 'Pretendard Bold';
+    font-size: 2em;
+    margin-bottom: 2vh;
+    display: inline-flex;
+    align-items: center; /* Center the button text */
+  }
+  
+  p {
+    margin-bottom: 2vh;
+  }
+  
+  .button-container {
+    margin-bottom: 2vh;
+  }
+  
+  .answer-button {
+    display: inline-flex;
+    width: 9vh;
+    height: 1.6em;
+    margin-right: 2vh; /* Add margin-right for spacing between the button and the text */
+    padding: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #1c1b1a;
+    background: #ff7710;
+    border: none;
+    /* border-radius: 90%; */
+    justify-content: center; /* Center the button text */
+    transition: all 0.2s;
+    font-family: 'Pretendard Variable';
+    font-size: 1em;
+  }
+  
+  
+  

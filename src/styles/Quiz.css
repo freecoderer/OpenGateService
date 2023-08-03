@@ -1,6 +1,5 @@
-/* Quiz.css */
-.quiz-container {
-  background-color: black;
+/* .quiz-container {
+  background-color: #1C1B1A;
   color: white;
   padding: 20px;
   text-align: center;
@@ -22,7 +21,7 @@
 
 .progress-fill {
   height: 100%;
-  background-color: #0ff;
+  background-color:#FF7710;
   transition: width 0.3s ease-in-out;
 }
 
@@ -81,14 +80,14 @@
   background-position: center;
 }
 
-/* 추가된 스타일 */
+
 .options-container {
   align-items: flex-start;
 }
 
 .option-button {
-  width: 350px; /* Increased width for A and B options */
-  height: 350px; /* Fixed height for A and B options */
+  width: 350px;
+  height: 350px;
   text-align: left;
 }
 
@@ -109,4 +108,108 @@
 .option-button-clicked {
   background-color: #777;
   transition: background-color 0.2s ease;
+} */
+
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1c1b1a;
 }
+
+h2 {
+  color: #ff7710;
+  font-family: 'Pretendard Bold';
+  font-size: 2em;
+  margin-bottom: 2vh;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the A and B options */
+  color: #ff7710;
+  font-family: 'Pretendard Variable';
+  font-size: 1.2em;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center; /* Center the A and B options */
+  width: 100%;
+}
+
+img {
+  width: 100vh;
+  height: 20em;
+  margin-top: 2vh;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 250;
+}
+
+input[type='radio'] {
+  margin-top: 1vh;
+}
+
+button.next-button {
+  display: block;
+  width: 120px;
+  margin-top: 2vh;
+  padding: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: #1c1b1a;
+  background: #ff7710;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Pretendard Variable';
+  font-size: 1em;
+}
+
+button.next-button:hover {
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+/* Style for circular buttons */
+.circular-button {
+  display: block;
+  width: 9.5vh;
+  height: 3.5em;
+  margin-top: 2vh;
+  padding: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: #1c1b1a;
+  background: #ff7710;
+  border: none;
+  border-radius: 90%;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Pretendard Variable';
+  font-size: 1em;
+}
+
+.circular-button:hover {
+  background-color: #ff5e00;
+}
+
+

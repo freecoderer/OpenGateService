@@ -1,32 +1,27 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import '../styles/Answer.css';
 
-const Answer1 = () => {
-  const { questionIndex } = useParams();
-  const selectedOptionIndex = parseInt(questionIndex, 10);
-
-  // 예시로 문제와 답안을 배열로 저장합니다.
-  const questions = [
-    {
-      question: '웹 접근성은 무엇을 의미하나요?',
-      options: ['웹페이지의 모든 기능이 모든 사용자에게 동등하게 제공되는 것', '웹페이지가 인터넷에 연결되어 있는 상태', '웹페이지가 모든 브라우저에서 호환되는 것', '웹페이지가 반응형으로 제작된 것'],
-      answer: 0, // 정답은 옵션 배열의 인덱스로 표현합니다.
-      explanation: '웹 접근성은 웹페이지의 모든 기능이 모든 사용자에게 동등하게 제공되는 것을 의미합니다.',
-    },
-    // 다른 문제들을 추가할 수 있습니다.
-  ];
-
-  // Get the selected question based on the question index from the URL parameter
-  const selectedQuestion = questions[selectedOptionIndex];
-
+export default function Answer1() {
   return (
-    <div className="quiz-container">
-      <div className="question-box">
-        <h1 className="question-text">해설 - {selectedQuestion.question}</h1>
-        <p className="explanation">{selectedQuestion.explanation}</p>
+    <div className="answer-container">
+      <h2>정답 : </h2>
+      <h2><button className="answer-button">A</button> Image Lazy Loading 사용</h2>
+      <p>
+        Image Lazy Loading은 페이지 안에 있는 실제 이미지들이 화면에 보여져야 할 때 로딩을 할 수 있도록 하는 기술입니다.
+        </p>
+        <p>
+        로딩시점을 뒤로 미루어 리소스의 로딩을 미루어 웹 성능과 디바이스 내 리소스 활용도 증가,
+        </p>
+        <p>          
+        그리고 연관된 비용을 줄이는 데 도움을 줄 수 있습니다.        
+      </p>
+      <p>
+        이는 웹 자체의 성능을 높여 좋은 기기를 사용하지 못하는 소외계층을 위한 웹 접근성 기술이기도 합니다.
+      </p>
+      
+      <div>
+        <button className="next-button">다음으로</button>
       </div>
     </div>
   );
-};
-
-export default Answer1;
+}
