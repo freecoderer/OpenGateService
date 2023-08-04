@@ -1,0 +1,29 @@
+.progress-bar {
+    color: #ff7710;
+    font-family: 'Pretendard Variable';
+    font-size: 1.2em;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .progress-bar-container {
+    width: 100vh;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #ff7710;
+    border-radius: 10px;
+    transition: width 0.2s;
+  }
+  
+  .progress-text {
+    margin-top: 8px;
+  }
+  
