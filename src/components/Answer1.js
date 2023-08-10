@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Answer.css';
+import { Link } from 'react-router-dom';
 
 export default function Answer1() {
   return (
@@ -20,7 +21,9 @@ export default function Answer1() {
       </p>
       
       <div>
+      <Link to="/quiz2">
         <button className="next-button">다음으로</button>
+        </Link>
       </div>
     </div>
   );

@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
-import Image from '../images/1.jpg';
+import Image from '../images/1.png';
 import ProgressBar from './ProgressBar';
 
-export default function Quiz1() {
-  const totalQuestions = 15; // Total number of questions
+function Quiz1({ correctAnswers, updateCorrectAnswers }) {
+  const totalQuestions = 15;
+
+  // Function to handle when A button is clicked
+  const handleAnswerButtonClick = () => {
+    updateCorrectAnswers(correctAnswers);
+    console.log('Updated Correct Answers:', correctAnswers + 1); // Log the updated value
+  };
+
+  
+  useEffect(() => {
+    console.log('Updated Correct Answers:', correctAnswers);
+  }, [correctAnswers]);
+
 
   return (
     <div className="quiz-container">
-      <ProgressBar currentQuestion={1} totalQuestions={totalQuestions} /> {/* Pass the current question number and total number of questions to ProgressBar */}
+      <ProgressBar currentQuestion={1} totalQuestions={totalQuestions} />
       <h2>
         1. 접속자가 많아 페이지 로딩이 느려지고 있습니다. 이때, 어떻게 해야 할까요?
       </h2>
@@ -21,7 +35,9 @@ export default function Quiz1() {
               A. Image Lazy Loading기법을 사용한다.
             </label>
             <Link to="/answer1">
-              <button className="circular-button">A</button>
+              <button className="circular-button" onClick={handleAnswerButtonClick}>
+                A
+              </button>
             </Link>
           </div>
           <div className="option">
@@ -33,9 +49,15 @@ export default function Quiz1() {
             </Link>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
   );
 }
 
+const mapStateToProps = (state) => ({
+  correctAnswers: state.correctAnswers, // Get the correctAnswers value from Redux store
+});
 
+const ConnectedQuiz1 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz1);
+
+export default ConnectedQuiz1;
