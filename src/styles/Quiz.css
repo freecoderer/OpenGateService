@@ -11,7 +11,6 @@ h2 {
   font-family: 'Pretendard Bold';
   font-size: 2em;
   margin-bottom: 2vh;
-  text-align: center;
 }
 
 .options {
@@ -90,8 +89,8 @@ button.next-button:hover {
 /* Style for circular buttons */
 .circular-button {
   display: block;
-  width: 9.5vh;
-  height: 3.5em;
+  width: 3.5vw;
+  height: 3.5vh;
   margin-top: 2vh;
   padding: 10px;
   font-weight: 800;

@@ -1,9 +1,12 @@
 import React from 'react'
+import '../styles/Result.css';
+import "../fonts/pretendardvariable.css";
+
 
 export default function Result() {
     return (
-        <div>
-            <h1>Result</h1>
+        <div className='maincontainer'>
+            <h2>Result</h2>
         </div>
     )
 }

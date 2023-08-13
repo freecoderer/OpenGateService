@@ -1,11 +1,22 @@
 import React from 'react';
 import '../styles/Answer.css';
 import { Link } from 'react-router-dom';
+import {motion} from "framer-motion";
+import { pageEffect } from './animation';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 export default function Answer2() {
   return (
     <div className="answer-container">
-      <h2>정답 : </h2>
+      <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      transition={{ duration: 1 }}
+      variants={pageEffect}
+        >
+      <h2>정답 : &nbsp;</h2>
+      <br></br>
       <h2><button className="answer-button">B</button> 이미지 최적화 작업을 한다.</h2>
       <p>
       이미지 최적화 작업을 해주어야 합니다.  
@@ -20,10 +31,13 @@ export default function Answer2() {
       WebP, AVIF. JPEG XL
       </p>
       
+      </motion.div>
       <div>
-      <Link to="/quiz2">
+      <FadeIn delay={1000}>
+        <Link to="/quiz2">
         <button className="next-button">다음으로</button>
         </Link>
+      </FadeIn>  
       </div>
     </div>
   );

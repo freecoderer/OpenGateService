@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useState} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
 import Image from '../images/1.png';
 import ProgressBar from './ProgressBar';
+import {motion} from "framer-motion";
+import { pageEffect } from './animation';
+
+
 
 function Quiz1({ correctAnswers, updateCorrectAnswers }) {
   const totalQuestions = 15;
@@ -20,9 +24,22 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
     console.log('Updated Correct Answers:', correctAnswers);
   }, [correctAnswers]);
 
+  const [visible, setVisible] = useState(true);
+
+  const toggleVisible = () => {
+    setVisible(!visible);
+  }
+
 
   return (
     <div className="quiz-container">
+      <motion.div className="quiz-container"
+      initial="initial"
+      animate="in"
+      exit="out"
+      transition={{ duration: 0.8 }}
+      variants={pageEffect}
+        >
       <ProgressBar currentQuestion={1} totalQuestions={totalQuestions} />
       <h2>
         1. 접속자가 많아 페이지 로딩이 느려지고 있습니다. 이때, 어떻게 해야 할까요?
@@ -35,7 +52,7 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
               A. Image Lazy Loading기법을 사용한다.
             </label>
             <Link to="/answer1">
-              <button className="circular-button" onClick={handleAnswerButtonClick}>
+              <button className="circular-button" onClick={handleAnswerButtonClick} onPress={toggleVisible}>
                 A
               </button>
             </Link>
@@ -50,6 +67,7 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
           </div>
         </div>
       </div>
+      </motion.div>
     </div>
   );
 }

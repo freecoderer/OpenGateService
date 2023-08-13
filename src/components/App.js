@@ -8,6 +8,7 @@ import Result from './Result';
 import Answer1 from './Answer1';
 import Answer2 from './Answer2';
 import store from '../redux/store'; // Import your Redux store
+import { AnimatePresence } from 'framer-motion';
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,9 @@ function App() {
   return (
     // Wrap your app with the Provider and pass your Redux store
     <Provider store={store}>
-      <RouterProvider router={router}></RouterProvider>
+      <AnimatePresence>
+        <RouterProvider router={router}></RouterProvider>
+      </AnimatePresence>
     </Provider>
   );
 }

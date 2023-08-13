@@ -5,6 +5,9 @@ import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
 import Image from '../images/2.png';
 import ProgressBar from './ProgressBar';
+import {motion} from "framer-motion";
+import { pageEffect } from './animation';
+
 
 function Quiz2({ correctAnswers, updateCorrectAnswers }) {
   const totalQuestions = 15;
@@ -21,6 +24,13 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
 
   return (
     <div className="quiz-container">
+      <motion.div className="quiz-container"
+      initial="initial"
+      animate="in"
+      exit="out"
+      transition={{ duration: 0.8 }}
+      variants={pageEffect}
+        >
       <ProgressBar currentQuestion={2} totalQuestions={totalQuestions} />
       <h2>
       2. 해당 이미지 파일이 너무 커서 로딩이 느려지고 있습니다.
@@ -50,6 +60,7 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
           </div>
         </div>
       </div>
+      </motion.div>
     </div>
   );
 }

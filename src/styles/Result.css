@@ -1,0 +1,102 @@
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1b1a;
+}
+
+h2 {
+    color: #ff7710;
+    font-family: 'Pretendard Bold';
+    font-size: 2em;
+    margin-bottom: 2vh;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center the A and B options */
+    color: #ff7710;
+    font-family: 'Pretendard Variable';
+    font-size: 1.2em;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    /* Center the A and B options */
+    width: 100%;
+    background-color: #1c1b1a;
+}
+
+
+.quiz2 {
+    width: 60vh;
+    height: 20em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 250;
+}
+
+input[type='radio'] {
+    margin-top: 1vh;
+}
+
+button.next-button {
+    display: block;
+    width: 120px;
+    margin-top: 2vh;
+    padding: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #1c1b1a;
+    background: #ff7710;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Pretendard Variable';
+    font-size: 1em;
+}
+
+button.next-button:hover {
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+/* Style for circular buttons */
+.circular-button {
+    display: block;
+    width: 9.5vh;
+    height: 3.5em;
+    margin-top: 2vh;
+    padding: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #1c1b1a;
+    background: #ff7710;
+    border: none;
+    border-radius: 90%;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Pretendard Variable';
+    font-size: 1em;
+}
+
+.circular-button:hover {
+    background-color: #ff5e00;
+}
