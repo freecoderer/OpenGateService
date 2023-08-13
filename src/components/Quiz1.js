@@ -27,7 +27,7 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
       <h2>
         1. 접속자가 많아 페이지 로딩이 느려지고 있습니다. 이때, 어떻게 해야 할까요?
       </h2>
-      <img src={Image} alt="Quiz1" />
+      <img src={Image} alt="Quiz1" className='quiz1'/>
       <div className="options">
         <div className="options-container">
           <div className="option">

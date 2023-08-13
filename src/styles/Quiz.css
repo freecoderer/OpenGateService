@@ -37,11 +37,21 @@ h2 {
   width: 100%;
   background-color: #1c1b1a;
 }
-
+/* 
 img {
-  width: 100vh;
+  width: 60vh;
   height: 30em;
   margin-top: 2vh;
+} */
+
+.quiz1 {
+  width: 60vh;
+  height: 25em;
+}
+
+.quiz2{  
+  width: 60vh;
+  height: 20em;
 }
 
 label {

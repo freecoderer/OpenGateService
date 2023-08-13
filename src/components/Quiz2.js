@@ -27,7 +27,7 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
       <br></br>
       이때, 웹 접근성의 측면으로 어떻게 해결해야 할까요?
       </h2>
-      <img src={Image} alt="Quiz2" />
+      <img src={Image} alt="Quiz2" className='quiz2'/>
       <div className="options">
         <div className="options-container">
           <div className="option">
