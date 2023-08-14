@@ -6,11 +6,14 @@
   background-color: #1c1b1a;
 }
 
-h2 {
+h3 {
   color: #ff7710;
   font-family: 'Pretendard Bold';
-  font-size: 2em;
-  margin-bottom: 2vh;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 3vh;
+  margin-bottom: 4vh;
+  text-align: center;
 }
 
 .options {
@@ -51,6 +54,7 @@ img {
 .quiz2{  
   width: 60vh;
   height: 20em;
+  background-color: #1c1b1a;
 }
 
 label {

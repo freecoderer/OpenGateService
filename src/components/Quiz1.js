@@ -41,29 +41,31 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
       variants={pageEffect}
         >
       <ProgressBar currentQuestion={1} totalQuestions={totalQuestions} />
-      <h2>
-        1. 접속자가 많아 페이지 로딩이 느려지고 있습니다. 이때, 어떻게 해야 할까요?
-      </h2>
+      <h3>
+        1. 이미지가 많아 페이지 로딩이 느려지고 있습니다. 이때, 어떻게 해야 할까요?
+      </h3>
       <img src={Image} alt="Quiz1" className='quiz1'/>
       <div className="options">
         <div className="options-container">
-          <div className="option">
-            <label>
-              A. Image Lazy Loading기법을 사용한다.
-            </label>
+          <div className="option">            
             <Link to="/answer1">
               <button className="circular-button" onClick={handleAnswerButtonClick} onPress={toggleVisible}>
                 A
               </button>
             </Link>
-          </div>
-          <div className="option">
             <label>
-              B. Div 태그를 이용해 소스를 묶는다.
+            <br></br>
+            A. Image Lazy Loading기법을 사용한다.
             </label>
+          </div>
+          <div className="option">            
             <Link to="/answer1">
               <button className="circular-button">B</button>
             </Link>
+          <label>
+            <br></br>
+            B. Div 태그를 이용해 소스를 묶는다.
+            </label>
           </div>
         </div>
       </div>

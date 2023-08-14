@@ -8,7 +8,7 @@ export default function Main() {
     return (
         <div className='main'>
             <div className='container'>
-                <FadeIn delay={500}><h2>웹 접근성 테스트</h2> </FadeIn>                                
+                <FadeIn delay={500}><h2 className='mainh2'>웹 접근성 테스트</h2> </FadeIn>                                
                 <FadeIn delay={600}><h3>초보 개발자들을 위한 웹 접근성 레벨테스트</h3></FadeIn>
                 <FadeIn delay={700}>
                     <div>

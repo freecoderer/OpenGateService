@@ -32,31 +32,33 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
       variants={pageEffect}
         >
       <ProgressBar currentQuestion={2} totalQuestions={totalQuestions} />
-      <h2>
+      <h3>
       2. 해당 이미지 파일이 너무 커서 로딩이 느려지고 있습니다.
       <br></br>
       이때, 웹 접근성의 측면으로 어떻게 해결해야 할까요?
-      </h2>
+      </h3>
       <img src={Image} alt="Quiz2" className='quiz2'/>
       <div className="options">
         <div className="options-container">
-          <div className="option">
-            <label>
-              A. 이미지를 빼고 글로 대체한다.
-            </label>
+          <div className="option">            
             <Link to="/answer2">
               <button className="circular-button">
                 A
               </button>
             </Link>
-          </div>
-          <div className="option">
             <label>
-              B. 이미지 최적화 작업을 한다.
+            <br></br>
+              A. 이미지를 빼고 글로 대체한다.
             </label>
+          </div>
+          <div className="option">            
             <Link to="/answer2">
               <button className="circular-button" onClick={handleAnswerButtonClick}>B</button>
             </Link>
+            <label>
+            <br></br>
+              B. 이미지 최적화 작업을 한다.
+            </label>
           </div>
         </div>
       </div>

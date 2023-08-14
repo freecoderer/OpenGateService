@@ -15,7 +15,7 @@ export default function Answer1() {
       transition={{ duration: 1 }}
       variants={pageEffect}
         >
-      <h2>정답 : &nbsp;</h2><br></br>
+      {/* <h2>정답 &nbsp;</h2><br></br> */}
       <h2><button className="answer-button">A</button> Image Lazy Loading 사용</h2>
       <p>
         Image Lazy Loading은 페이지 안에 있는 실제 이미지들이 화면에 보여져야 할 때 로딩을 할 수 있도록 하는 기술입니다.
