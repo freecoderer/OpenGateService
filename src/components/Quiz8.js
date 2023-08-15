@@ -1,26 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useState} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
-import Image from '../images/2.png';
+import Image from '../images/8번.png';
 import ProgressBar from './ProgressBar';
 import {motion} from "framer-motion";
 import { pageEffect } from './animation';
 
 
-function Quiz2({ correctAnswers, updateCorrectAnswers }) {
-  const totalQuestions = 15;
 
-  useEffect(() => {
-    console.log('Updated Correct Answers:', correctAnswers);
-  }, [correctAnswers]);
+function Quiz8({ correctAnswers, updateCorrectAnswers }) {
+  const totalQuestions = 15;
 
   // Function to handle when A button is clicked
   const handleAnswerButtonClick = () => {
     updateCorrectAnswers(correctAnswers);
-    console.log('Updated Correct Answers:', correctAnswers + 1); 
+    console.log('Updated Correct Answers:', correctAnswers + 1); // Log the updated value
   };
+
+  
+  useEffect(() => {
+    console.log('Updated Correct Answers:', correctAnswers);
+  }, [correctAnswers]);
+
+  const [visible, setVisible] = useState(true);
+
+  const toggleVisible = () => {
+    setVisible(!visible);
+  }
+
 
   return (
     <div className="quiz-container">
@@ -31,33 +40,31 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
       transition={{ duration: 0.8 }}
       variants={pageEffect}
         >
-      <ProgressBar currentQuestion={2} totalQuestions={totalQuestions} />
+      <ProgressBar currentQuestion={8} totalQuestions={totalQuestions} />
       <h3>
-      2. 해당 이미지 파일이 너무 커서 로딩이 느려지고 있습니다.
-      <br></br>
-      이때, 웹 접근성의 측면으로 어떻게 해결해야 할까요?
+      8. 웹 페이지의 접근성을 자동으로 진단할 수 있는 도구의 이름은?
       </h3>
-      <img src={Image} alt="Quiz2" className='quiz2'/>
+      <img src={Image} alt="Quiz8" className='quiz1'/>
       <div className="options">
         <div className="options-container">
           <div className="option">            
-            <Link to="/answer2">
-              <button className="circular-button">
+            <Link to="/answer8">
+              <button className="circular-button" onPress={toggleVisible}>
                 A
               </button>
             </Link>
             <label>
             <br></br>
-              이미지를 빼고 글로 대체한다.
+            Open CV
             </label>
           </div>
           <div className="option">            
-            <Link to="/answer2">
-              <button className="circular-button" onClick={handleAnswerButtonClick}>B</button>
+            <Link to="/answer8">
+              <button className="circular-button" onClick={handleAnswerButtonClick} >B</button>
             </Link>
-            <label>
+          <label>
             <br></br>
-              이미지 최적화 작업을 한다.
+            Open WAX
             </label>
           </div>
         </div>
@@ -71,6 +78,6 @@ const mapStateToProps = (state) => ({
   correctAnswers: state.correctAnswers, // Get the correctAnswers value from Redux store
 });
 
-const ConnectedQuiz2 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz2);
+const ConnectedQuiz8 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz8);
 
-export default ConnectedQuiz2;
+export default ConnectedQuiz8;

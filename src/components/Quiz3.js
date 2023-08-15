@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
-import Image from '../images/2.png';
+import Image1 from '../images/3번 A.jpg';
+import Image2 from '../images/3번 A코드.png';
+import Image3 from '../images/3번 B.png';
+import Image4 from '../images/3번 B코드.png';
 import ProgressBar from './ProgressBar';
 import {motion} from "framer-motion";
 import { pageEffect } from './animation';
 
 
-function Quiz2({ correctAnswers, updateCorrectAnswers }) {
+function Quiz3({ correctAnswers, updateCorrectAnswers }) {
   const totalQuestions = 15;
 
   useEffect(() => {
@@ -31,33 +34,44 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
       transition={{ duration: 0.8 }}
       variants={pageEffect}
         >
-      <ProgressBar currentQuestion={2} totalQuestions={totalQuestions} />
+      <ProgressBar currentQuestion={3} totalQuestions={totalQuestions} />
       <h3>
-      2. 해당 이미지 파일이 너무 커서 로딩이 느려지고 있습니다.
-      <br></br>
-      이때, 웹 접근성의 측면으로 어떻게 해결해야 할까요?
+      3. 두 이미지 중 태그가 잘못된 것은 무엇인가요?
       </h3>
-      <img src={Image} alt="Quiz2" className='quiz2'/>
+      <div className="image-group1">
+      <div className="image-group2">
+  <div>
+    <img src={Image1} alt="Quiz3-1" className='quiz3-1'/>
+  </div>
+</div>
+<div className="image-group2">
+  <div>
+    <img src={Image3} alt="Quiz3-3" className='quiz3-3'/>
+  </div>
+</div>
+</div>
       <div className="options">
         <div className="options-container">
-          <div className="option">            
-            <Link to="/answer2">
-              <button className="circular-button">
+          <div className="option3">            
+            <Link to="/answer3">
+              <button className="circular-button" onClick={handleAnswerButtonClick}>
                 A
               </button>
             </Link>
             <label>
-            <br></br>
-              이미지를 빼고 글로 대체한다.
+            <div>
+    <img src={Image2} alt="Quiz3-2" className='quiz3-2'/>
+  </div>
             </label>
           </div>
-          <div className="option">            
-            <Link to="/answer2">
-              <button className="circular-button" onClick={handleAnswerButtonClick}>B</button>
+          <div className="option4">            
+            <Link to="/answer3">
+              <button className="circular-button">B</button>
             </Link>
             <label>
-            <br></br>
-              이미지 최적화 작업을 한다.
+            <div>
+    <img src={Image4} alt="Quiz3-4" className='quiz3-4'/>
+  </div>
             </label>
           </div>
         </div>
@@ -71,6 +85,6 @@ const mapStateToProps = (state) => ({
   correctAnswers: state.correctAnswers, // Get the correctAnswers value from Redux store
 });
 
-const ConnectedQuiz2 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz2);
+const ConnectedQuiz3 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz3);
 
-export default ConnectedQuiz2;
+export default ConnectedQuiz3;

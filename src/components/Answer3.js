@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import { pageEffect } from './animation';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
-export default function Answer2() {
+export default function Answer3() {
   return (
     <div className="answer-container">
       <motion.div
@@ -17,26 +17,22 @@ export default function Answer2() {
         >
       {/* <h2>정답 : &nbsp;</h2> */}
       <br></br>
-      <h2><button className="answer-button">B</button> 이미지 최적화 작업을 한다.</h2>
+      <h2><button className="answer-button">A</button> 
+      alt 태그의 내용을 채워준다.
+        </h2>
       <p>
-      이미지 최적화 작업을 해주어야 합니다.  
+      시각장애인들은 스크린리더를 사용해 이미지에 대한 설명을 듣습니다.  
         </p>
         <p>
-        웹 접근성의 측면에서 바라보면 상대적으로 불편한 환경에서 웹을 사용하는 소외 계층이
+        이때, 스크린 리더는 alt태그의 내용을 인식하는데 alt태그의 내용을 채워주지 않으면
         </p>
-        <p> 이미지 최적화 작업을 통해 보다 빠른 웹 환경을 이용할 수 있습니다.
-        </p>
-        <p>          
-        *모던 이미지 포멧을 사용 하는 것을 권장합니다.        
-      </p>
-      <p>
-      WebP, AVIF. JPEG XL
-      </p>
-      
+        <p> 이미지에 대한 내용을 스크린리더가 인식 할 수 없습니다.
+        </p>              
       </motion.div>
+      
       <div>
       <FadeIn delay={1000}>
-        <Link to="/quiz3">
+        <Link to="/quiz4">
         <button className="next-button">다음으로</button>
         </Link>
       </FadeIn>  

@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import { pageEffect } from './animation';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
-export default function Answer2() {
+export default function Answer8() {
   return (
     <div className="answer-container">
       <motion.div
@@ -17,26 +17,22 @@ export default function Answer2() {
         >
       {/* <h2>정답 : &nbsp;</h2> */}
       <br></br>
-      <h2><button className="answer-button">B</button> 이미지 최적화 작업을 한다.</h2>
+      <h2><button className="answer-button">B</button> 
+      Open WAX
+        </h2>
       <p>
-      이미지 최적화 작업을 해주어야 합니다.  
+      OpenWAX는 웹 페이지의 접근성을 자동으로 진단할 수 있는 도구입니다. 
         </p>
         <p>
-        웹 접근성의 측면에서 바라보면 상대적으로 불편한 환경에서 웹을 사용하는 소외 계층이
+        OpenWAX는 플러그인 형태로 Google Chrome 브라우저와 Mozilla FireFox브라우저에서 제공됩니다.
         </p>
-        <p> 이미지 최적화 작업을 통해 보다 빠른 웹 환경을 이용할 수 있습니다.
-        </p>
-        <p>          
-        *모던 이미지 포멧을 사용 하는 것을 권장합니다.        
-      </p>
-      <p>
-      WebP, AVIF. JPEG XL
-      </p>
-      
+        <p>자동 진단이 가능한 항목을 통해 진단 결과를 확인하고 수동 진단을 병행해야 합니다.
+        </p>                      
       </motion.div>
+      
       <div>
       <FadeIn delay={1000}>
-        <Link to="/quiz3">
+        <Link to="/quiz9">
         <button className="next-button">다음으로</button>
         </Link>
       </FadeIn>  

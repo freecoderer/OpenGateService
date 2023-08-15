@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import { pageEffect } from './animation';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
-export default function Answer2() {
+export default function Answer6() {
   return (
     <div className="answer-container">
       <motion.div
@@ -17,26 +17,22 @@ export default function Answer2() {
         >
       {/* <h2>정답 : &nbsp;</h2> */}
       <br></br>
-      <h2><button className="answer-button">B</button> 이미지 최적화 작업을 한다.</h2>
+      <h2><button className="answer-button">A</button> 
+      아이콘, 큰 글씨 사용
+        </h2>
       <p>
-      이미지 최적화 작업을 해주어야 합니다.  
+      지적장애나 발달장애인의 웹 접근성을 높이기 위해서는 
         </p>
         <p>
-        웹 접근성의 측면에서 바라보면 상대적으로 불편한 환경에서 웹을 사용하는 소외 계층이
+        크고 이해하기 쉬운 아이콘을 사용해야 하며,
         </p>
-        <p> 이미지 최적화 작업을 통해 보다 빠른 웹 환경을 이용할 수 있습니다.
-        </p>
-        <p>          
-        *모던 이미지 포멧을 사용 하는 것을 권장합니다.        
-      </p>
-      <p>
-      WebP, AVIF. JPEG XL
-      </p>
-      
+        <p>큰 글씨로 이해하기 쉽도록 명시해야 합니다.
+        </p>              
       </motion.div>
+      
       <div>
       <FadeIn delay={1000}>
-        <Link to="/quiz3">
+        <Link to="/quiz7">
         <button className="next-button">다음으로</button>
         </Link>
       </FadeIn>  

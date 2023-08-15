@@ -26,11 +26,44 @@ h3 {
   font-size: 1.2em;
 }
 
+.options-4 {
+  padding-top: 11vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the A and B options */
+  color: #ff7710;
+  font-family: 'Pretendard Variable';
+  font-size: 1.2em;
+}
+.options-6 {
+  padding-top: 1vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the A and B options */
+  color: #ff7710;
+  font-family: 'Pretendard Variable';
+  font-size: 1.2em;
+}
+
 .option {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5vh;
+}
+.option3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20vh;
+}
+.option4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20vh;
 }
 
 .options-container {
@@ -93,8 +126,8 @@ button.next-button:hover {
 /* Style for circular buttons */
 .circular-button {
   display: block;
-  width: 3.5vw;
-  height: 3.5vh;
+  width: 4.3vw;
+  height: 9vh;
   margin-top: 2vh;
   padding: 10px;
   font-weight: 800;
@@ -113,6 +146,54 @@ button.next-button:hover {
   background-color: #ff5e00;
 }
 
+.quiz3-1 {
+  width: 60vh;
+  height: 20em;
+}
+.quiz3-2 {
+  width: 40vh;
+  height: 5em;
+  padding-top: 1em;
+}
+.quiz3-3 {
+  width: 60vh;
+  height: 20em;
+}
+.quiz3-4 {
+  width: 40vh;
+  height: 5em;
+  padding-top: 1em;
+}
 
+.image-group1{
+  display:flex;
+}
+
+.image-group2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vh;
+  margin-right: 10vh; /* Add some margin between image groups */
+  align-items: center;
+}
+.image-group4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vh;
+  margin-right: 2vh; /* Add some margin between image groups */
+  align-items: center;
+}
+
+.quiz4 {
+  width: 50vh;
+  height: 8em;
+  padding-top: 1em;
+}
+
+.quiz6 {
+  width: 50vh;
+  height: 23em;
+  padding-top: 1em;
+}
 
 

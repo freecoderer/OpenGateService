@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
-import Image from '../images/2.png';
+import Image1 from '../images/7번 문제.png';
+import Image3 from '../images/7번 문제2.png';
 import ProgressBar from './ProgressBar';
 import {motion} from "framer-motion";
 import { pageEffect } from './animation';
 
 
-function Quiz2({ correctAnswers, updateCorrectAnswers }) {
+function Quiz7({ correctAnswers, updateCorrectAnswers }) {
   const totalQuestions = 15;
 
   useEffect(() => {
@@ -31,33 +32,42 @@ function Quiz2({ correctAnswers, updateCorrectAnswers }) {
       transition={{ duration: 0.8 }}
       variants={pageEffect}
         >
-      <ProgressBar currentQuestion={2} totalQuestions={totalQuestions} />
+      <ProgressBar currentQuestion={7} totalQuestions={totalQuestions} />
       <h3>
-      2. 해당 이미지 파일이 너무 커서 로딩이 느려지고 있습니다.
-      <br></br>
-      이때, 웹 접근성의 측면으로 어떻게 해결해야 할까요?
+      7. 다음 중 해당 코드에서 잘못된 부분은?
       </h3>
-      <img src={Image} alt="Quiz2" className='quiz2'/>
+      <div className="image-group1">
+      <div className="image-group4">
+  <div>
+    <img src={Image1} alt="Quiz7-1" className='quiz3-1'/>
+  </div>
+</div>
+<div className="image-group4">
+  <div>
+    <img src={Image3} alt="Quiz7-2" className='quiz3-3'/>
+  </div>
+</div>
+</div>
       <div className="options">
         <div className="options-container">
-          <div className="option">            
-            <Link to="/answer2">
-              <button className="circular-button">
+          <div className="option3">            
+            <Link to="/answer7">
+              <button className="circular-button" onClick={handleAnswerButtonClick}>
                 A
               </button>
             </Link>
             <label>
             <br></br>
-              이미지를 빼고 글로 대체한다.
+              논리성
             </label>
           </div>
-          <div className="option">            
-            <Link to="/answer2">
-              <button className="circular-button" onClick={handleAnswerButtonClick}>B</button>
+          <div className="option4">            
+            <Link to="/answer7">
+              <button className="circular-button">B</button>
             </Link>
             <label>
             <br></br>
-              이미지 최적화 작업을 한다.
+              오탈자
             </label>
           </div>
         </div>
@@ -71,6 +81,6 @@ const mapStateToProps = (state) => ({
   correctAnswers: state.correctAnswers, // Get the correctAnswers value from Redux store
 });
 
-const ConnectedQuiz2 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz2);
+const ConnectedQuiz7 = connect(mapStateToProps, { updateCorrectAnswers })(Quiz7);
 
-export default ConnectedQuiz2;
+export default ConnectedQuiz7;

@@ -9,6 +9,18 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .answer-container-7 {
+    padding: 5vh;
+    background-color: #1c1b1a;
+    color: white;
+    font-family: 'Pretendard Variable';
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   h2 {
     font-family: 'Pretendard Bold';
@@ -45,5 +57,14 @@
     font-size: 1em;
   }
   
+  .answer7-1 {
+    width: 40vh;
+    height: 15em;
+  }
+
+  .answer7-2 {
+    width: 40vh;
+    height: 15em;
+  }
   
   

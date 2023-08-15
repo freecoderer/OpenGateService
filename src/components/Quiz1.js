@@ -55,7 +55,7 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
             </Link>
             <label>
             <br></br>
-            A. Image Lazy Loading기법을 사용한다.
+            Image Lazy Loading기법을 사용한다.
             </label>
           </div>
           <div className="option">            
@@ -64,7 +64,7 @@ function Quiz1({ correctAnswers, updateCorrectAnswers }) {
             </Link>
           <label>
             <br></br>
-            B. Div 태그를 이용해 소스를 묶는다.
+            Div 태그를 이용해 소스를 묶는다.
             </label>
           </div>
         </div>
