@@ -26,10 +26,10 @@ jobs:
           node-version: 14 # Adjust to the appropriate Node.js version
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build Application
-        run: npm install --legacy-peer-deps # Use your actual build command
+        run: npm run build
 
       - name: Build And Deploy
         id: builddeploy
