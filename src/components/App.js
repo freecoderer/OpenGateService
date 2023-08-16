@@ -23,6 +23,18 @@ import Quiz8 from './Quiz8';
 import Answer8 from './Answer8';
 import Quiz9 from './Quiz9';
 import Answer9 from './Answer9';
+import Quiz10 from './Quiz10';
+import Answer10 from './Answer10';
+import Quiz11 from './Quiz11';
+import Answer11 from './Answer11';
+import Quiz12 from './Quiz12';
+import Answer12 from './Answer12';
+import Quiz13 from './Quiz13';
+import Answer13 from './Answer13';
+import Quiz14 from './Quiz14';
+import Answer14 from './Answer14';
+import Quiz15 from './Quiz15';
+import Answer15 from './Answer15';
 
 const router = createBrowserRouter([
   {
@@ -105,6 +117,59 @@ const router = createBrowserRouter([
     path: '/answer9',
     element: <Answer9 />,
   },
+  {
+    path: '/quiz10',
+    element: <Quiz10 />,
+  },
+  {
+    path: '/answer10',
+    element: <Answer10 />,
+  },
+  {
+    path: '/quiz11',
+    element: <Quiz11 />,
+  },
+   {
+    path: '/answer11',
+    element: <Answer11 />,
+  },
+  {
+    path: '/quiz12',
+    element: <Quiz12 />,
+  },
+  {
+    path: '/answer12',
+    element: <Answer12 />,
+  },
+   {
+    path: '/quiz13',
+    element: <Quiz13 />,
+  },
+  {
+    path: '/answer13',
+    element: <Answer13 />,
+  },
+{
+    path: '/quiz14',
+    element: <Quiz14 />,
+  },
+  {
+    path: '/answer14',
+    element: <Answer14 />,
+  },
+  {
+    path: '/quiz15',
+    element: <Quiz15 />,
+  },
+  {
+    path: '/answer15',
+    element: <Answer15 />,
+  },
+
+
+
+
+
 ]);
 
 function App() {
