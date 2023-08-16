@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Build Application
-        run: npm run build # Use your actual build command
+        run: npm install --legacy-peer-deps # Use your actual build command
 
       - name: Build And Deploy
         id: builddeploy
