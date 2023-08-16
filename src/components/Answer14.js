@@ -9,7 +9,7 @@ import Image2 from '../images/Q5_a.png'
 
 export default function Answer14() {
   return (
-    <div className="answer-container">
+    <div className="answer-container-14">
       <motion.div
       initial="initial"
       animate="in"

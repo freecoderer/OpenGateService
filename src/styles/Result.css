@@ -20,6 +20,8 @@
 .logo{
     justify-content: center;
     width: 20vw;
+    filter: brightness(100%);
+    padding-bottom: 0;
 }
 
 .para{
@@ -27,6 +29,7 @@
     font-family: 'Pretendard Bold';
     font-size: 2em;
     margin-bottom: 2vh;
+    text-align: center;
 }
 
 .para2{
@@ -34,6 +37,7 @@
     font-family: 'Pretendard Bold';
     font-size: 2em;
     margin-bottom: 2vh;
+    text-align: center;
 }
 
 .smpara {
@@ -44,7 +48,7 @@
 }
 
 .bottom{
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 
 .access{
