@@ -101,6 +101,10 @@ function Result({ correctAnswers }) {
                     <p className='smpara'>&#128077; 각종 조례와 규정들에 대한 자료집</p>
                     <p className='smpara'>&#128077; 각종 조례와 규정들에 대한 자료집</p>
                 </div>
+
+                <div>
+                    
+                </div>
             </motion.div>
         </div>
     );

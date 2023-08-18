@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateCorrectAnswers } from '../redux/actions';
 import '../styles/Quiz.css';
-import Image from '../images/1.png';
+import Image from '../images/01.png';
 import ProgressBar from './ProgressBar';
 import {motion} from "framer-motion";
 import { pageEffect } from './animation';
