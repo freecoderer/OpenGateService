@@ -1,6 +1,6 @@
 # OpenGateService
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=7F7FD5&text=OpenGateService&height=100&fontSize=40&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=92A8D1&text=OpenGateService&height=100&fontSize=40&fontColor=ffffff)
 
 ![image](https://github.com/snowooden/OpenGateService/assets/81368819/912aad50-dd7e-4e9d-ac73-9101de93a523)
 
@@ -40,4 +40,4 @@ Feel free to reach out for any queries or collaboration opportunities:
 - **GitHub**: [freecoderer](https://github.com/freecoderer)
 - **LinkedIn**: [Donghyun Kim](https://www.linkedin.com/in/kdh1999dev)
 
-![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=7F7FD5)
+![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=92A8D1)
