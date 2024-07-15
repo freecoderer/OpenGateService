@@ -5,7 +5,7 @@
 ![image](https://github.com/snowooden/OpenGateService/assets/81368819/912aad50-dd7e-4e9d-ac73-9101de93a523)
 
 ## Overview
-OpenGateService is a project for creating a web accessibility quiz webpage. This project aims to educate and test users on various aspects of web accessibility, ensuring that they are aware of best practices and standards in creating inclusive web content.
+OpenGateService is a project for a web accessibility quiz webpage. This project aims to educate and test users on various aspects of web accessibility, ensuring that they are aware of best practices and standards in creating inclusive web content.
 
 Check out the deployed application (not currently running): [OpenGateService](https://calm-bush-056566900.3.azurestaticapps.net/)
 
